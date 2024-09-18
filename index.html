@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://kit.fontawesome.com/3edc9f49d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="imageS/LOGO.png" class="LOGO">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+
+        </nav>
+        <div class="header_text">
+            <p>FrontEnd Developer </p>
+            <h1>Hi, I'm <span>Arpita</span><br>Agarwal.</h1>
+        </div>
+    </div>
+</div>
+<!-----------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="imageS/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Third year undergraduate and Graphic enthusiast, pursuing my Bachelor's in CS.I am highly motivated and results-driven person passionate about simplifying intricate challenges into elegant and intuitive solutions, whether it's in coding, design, or problem-solving. I am committed to continuous growth and
+                    eagerly embrace opportunities for learning and development.Seeking out new opportunities to learn and gain exposure to different areas in order to find my true calling.
+                    My job is to engineer innovative solutions as a dedicated software developer.Proficient in languages like C/C++,JAVASCRIPT and basic knowledge about Python and Flutter, with experience in developer tools including Github and Visual Studio and experience in web technology like React.I'm committed to advancing technology and driving impactful solutions.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('PROJECTS')">PROJECTS</p>
+                    <p class="tab-links" onclick="opentab('EDUCATION')">EDUCATION</p>
+                </div>
+                <div class="tab-contents active-tab" id="SKILLS">
+                    <ul>
+                        <li><span>Web Development</span><br>FrontEnd Developer</li>
+                        <li><span>Graphic Designing</span><br>UI/UX<br>Adobe Illustrator<br>Figma</li>
+                        <li><span>Technical Languages</span><br>C++<br>JAVASCRIPT,HTML,CSS<br>DSA</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="PROJECTS">
+                    <ul>
+                        <li><span>Temprature Convertor</span><br>Developed a temperature converter application that allows users to
+                            easily convert temperatures between Celsius, Fahrenheit, and
+                            Kelvin.<br>2022-2023</li>
+                        <li><span>Amazon Clone</span><br>Utilized HTML and CSS to design an engaging and responsive
+                            interface that mirrors the essential features of Netflix<br>2022-2023</li>
+                        <li><span>Wireless Volume Control</span><br>Developed a cutting-edge gesture recognition system to enhance human-computer intera<br>2023-2024</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="EDUCATION">
+                    <ul>
+                        <li><span>Bachelors in Computer Science</span><br>SRM INSTITUTE OF SCIENCE AND TECHNOLOGY, DELHI-NCR<br>2021-25</li>
+                        <li><span>High School Graduation</span><br>GRM SR. SEC. SCHOOL, BAREILLY, UTTAR PRADESH<br>12th Grade - 94.2% <br>10th Grade - 96.2%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+    </div>       
+</div>
+<!----------------------------------------------servicesss------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designing</h2>
+                <p>Crafting dynamic web experiences, optimizing performance seamlessly.Elevate your online presence with our expert web development services. We build responsive, user-friendly websites that not only look great but also perform seamlessly. Let us transform your digital vision into a dynamic reality</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-grip"></i>
+                <h2>Graphic Designing</h2>
+                <p>Transforming visions into stunning visuals with expert graphic design.
+                    Bring your ideas to life with stunning, custom graphic design. From logos to marketing materials, we create visuals that captivate and communicate your brand's unique message. Let us turn your vision into vibrant reality.
+                </p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------portfolio---------------------------------------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>Utilized HTML and CSS to design an engaging and responsive
+                        interface that mirrors the essential features of Amazon.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>Utilized HTML and CSS to design an engaging and responsive
+                        interface that mirrors the essential features of Netflix
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Temprature Convertor</h3>
+                    <p>eveloped a temperature converter application that allows users to
+                        easily convert temperatures between Celsius, Fahrenheit, and
+                        Kelvin.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!---------------------------------------contact --------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>    arpita07theonlyone@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>    8273104366</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Arpita0720"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/arpita-agarwal-966052229/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com/_.its.arpita._"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/arpita0720"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Arpita. Made using <i class="fa-solid fa-heart"></i> Web Development </p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+        
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+        
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzdJFIXpYVOcp23aYuLI8VAeaZxC1D7i3vmZnXJlscjUthulsHJuNay1HNizN421LpT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function() {
+                msg.innerHTML=""
+            }, 5000) 
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+  
+</body>
+</html>
